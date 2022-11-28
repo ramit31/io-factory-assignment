@@ -1,0 +1,87 @@
+.guide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    background-image: url("../assets/images/food-guide-banner.png");
+    background-size: cover;
+}
+
+.guide > img{
+    width: 100%;
+    grid-row: 1/span 3;
+    grid-column: 1/span 3;
+}
+
+.guidetxt{
+    grid-row: 1/span 1;
+    grid-column: 1/span 3;
+}
+
+.guidetxt p{
+    padding-top: 1.875rem;
+    margin-bottom: 0.625rem;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.guidebr {
+    grid-row: 1;
+    grid-column: 1/span 3;
+    background-color: black;
+    border: none;
+    height: 3px;
+    max-width: 50px;
+    width: 100%;
+}
+
+.genfood1 {
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
+}
+
+.genfood2 {
+    grid-row: 2/span 1;
+    grid-column: 3/span 1;
+}
+
+.genfood3 {
+    grid-row: 3/span 1;
+    grid-column: 1/span 1;
+}
+
+.genfood4 {
+    grid-row: 3/span 1;
+    grid-column: 3/span 1;
+}
+
+.genfoodpos{
+    padding-bottom: 11.25rem;
+}
+
+.genfoodicn {
+    max-width: 5rem;
+    max-height: 5rem;
+    display: block;
+    margin: auto;
+}
+
+.genfoodhead {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.genfooddesc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    margin-top: 0.875rem;
+    margin-bottom: 0px;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    max-width: 100%;
+    text-align: center;
+}

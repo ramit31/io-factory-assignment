@@ -1,0 +1,233 @@
+.var > p{
+    padding-top: 1.875rem;
+    margin-bottom: 0.625rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.var p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.varbr {
+    background-color: black;
+    border: none;
+    height: 3px;
+    max-width: 30px;
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+.varlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.625rem;
+}
+
+.varcardgen {
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+}
+
+.varcard1 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+    background-image: url("../assets/images/pizza.png");
+    height: 540px !important;
+}
+
+.varcard2 {
+    grid-column: 3/span 1;
+    grid-row: 1/span 1;
+    background-image: url("../assets/images/fries.png");
+}
+
+.varcard3 {
+    grid-column: 4/span 1;
+    grid-row: 1/span 1;
+    background-image: url("../assets/images/tikka.png");
+}
+
+.varcard4 {
+    grid-column: 3/span 1;
+    grid-row: 2/span 1;
+    background-image: url("../assets/images/macaron.png");
+}
+
+.varcard5 {
+    grid-column: 4/span 1;
+    grid-row: 2/span 1;
+    background-image: url("../assets/images/donut.png");
+}
+
+.cardinfo {
+    padding: 1.25rem;
+    opacity: 0.8;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: white;
+    width: 100%;
+    height: 35%;
+}
+
+.varcard2 .cardinfo:hover,
+.varcard3 .cardinfo:hover,
+.varcard4 .cardinfo:hover,
+.varcard5 .cardinfo:hover  {
+    animation: transition1;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes transition1 {
+    0%{background-color: white;}
+    100%{background-color: black;}
+}
+
+.varcard1 .cardinfo:hover {
+    animation: transition1card1;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes transition1card1 {
+    0%{background-color: #342679;}
+    100%{background-color: black;}
+}
+
+.varcard1>.cardinfo {
+    background-color: #342679;
+    height: 18%;
+}
+
+.varcard1>.cardinfo hr {
+    background-color: white;   
+}
+
+.cardinfo hr {
+    border: none;
+    background-color: black;
+    height: 2px;
+}
+
+.varcard2 .cardinfo:hover hr,
+.varcard3 .cardinfo:hover hr,
+.varcard4 .cardinfo:hover hr,
+.varcard5 .cardinfo:hover hr{
+    background-color: white;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action svg {
+    height: 18px;
+    width: 18px;
+}
+
+.varcard1 .action svg * {
+    fill: white !important;
+}
+
+.action svg * {
+    fill: black !important;
+}
+
+.varcard2 .cardinfo:hover .action svg *,
+.varcard3 .cardinfo:hover .action svg *,
+.varcard4 .cardinfo:hover .action svg *,
+.varcard5 .cardinfo:hover .action svg * {
+    fill: white !important;
+}
+
+
+.action div {
+    display: flex;
+    align-items: center;
+}
+
+.varcard1  .cardhead {
+    color: white;
+}
+
+.varcard1  .carddesc {
+    color: white;
+}
+
+.cardhead {
+    font-weight: 700;
+    font-size: 0.625rem;
+    color: black;
+    margin: 0 !important;
+}
+
+.varcard2 .cardinfo:hover .cardhead,
+.varcard3 .cardinfo:hover .cardhead,
+.varcard4 .cardinfo:hover .cardhead,
+.varcard5 .cardinfo:hover .cardhead {
+    color: white;
+}
+
+.carddesc {
+    font-size: 0.5rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 15px !important;
+}
+
+.varcard2 .cardinfo:hover .carddesc,
+.varcard3 .cardinfo:hover .carddesc,
+.varcard4 .cardinfo:hover .carddesc,
+.varcard5 .cardinfo:hover .carddesc {
+    color: white;
+}
+
+.varcard1  .actiontxt {
+    color: white;
+}
+
+.actiontxt {
+    font-size: 0.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.varcard2 .cardinfo:hover .actiontxt,
+.varcard3 .cardinfo:hover .actiontxt,
+.varcard4 .cardinfo:hover .actiontxt,
+.varcard5 .cardinfo:hover .actiontxt {
+    color: white;
+}
+
+.actiontxtspclt {
+    margin-left: 10px !important;
+}
+
+.actiontxtspcrt{
+    margin-right: 10px !important;
+}
+
+.action div {
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0.8rem;
+}
+
+.varcard1 .action div:hover{
+    border: 1px solid white;
+}
+
+.varcard2 .cardinfo:hover .action div:hover,
+.varcard3 .cardinfo:hover .action div:hover,
+.varcard4 .cardinfo:hover .action div:hover,
+.varcard5 .cardinfo:hover .action div:hover {
+    border: 1px solid white;
+}

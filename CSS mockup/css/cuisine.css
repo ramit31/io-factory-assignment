@@ -1,0 +1,36 @@
+.cuisine > p{
+    padding-top: 1.875rem;
+    margin-bottom: 0.625rem;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cuisinebr {
+    background-color: black;
+    border: none;
+    height: 3px;
+    max-width: 30px;
+    width: 100%;
+}
+
+.cuisinelist {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cuisinehead{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: black;
+    margin: 0 !important;
+}
+
+.cuisinedesc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.625rem;
+    max-width: 450px;
+    color: black;
+    margin-bottom: 2.5rem !important;
+}

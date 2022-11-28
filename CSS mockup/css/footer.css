@@ -1,0 +1,12 @@
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    padding-top: 2.188rem;
+    padding-bottom: 1.875rem;
+}
+
+.socialicn{
+    max-width: 2.813rem;
+    max-height: 2.813rem;
+}

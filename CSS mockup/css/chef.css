@@ -1,0 +1,74 @@
+.chef p{
+    padding-top: 1.875rem;
+    margin-bottom: 0.625rem;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.chefbr {
+    background-color: black;
+    border: none;
+    height: 3px;
+    max-width: 40px;
+    width: 100%;
+}
+
+.cheflist {
+    background-image: url("../assets/images/bread.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+
+.chefinfo img {
+    height: 3.125rem;
+    width: 3.125rem;
+}
+
+.chefhead {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: white;
+    padding: 0 !important;
+    margin-top: 0.625rem !important;
+    margin-bottom: 0.313rem !important;
+}
+
+.chefdesc{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.5rem;
+    font-weight: 600;
+    max-width: 250px;
+    color: white;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-bottom: 2.5rem !important;
+}
+
+.chefinfo  {
+    border-radius: 0.7rem;
+    padding: 1.563rem 1.25rem;
+    margin-top: 2.188rem;
+    margin-bottom: 5.313rem;
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+}
+
+.chefinfo:hover {
+    animation: transition2;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.chefinfo:hover .chefhead, .chefinfo:hover .chefdesc {
+    color: black;
+}
+
+@keyframes transition2 {
+    0%{background-color: none;}
+    100%{background-color: white;}
+}
