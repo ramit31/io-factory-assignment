@@ -19,6 +19,8 @@
     background-size: cover;
     display: flex;
     justify-content: space-around;
+    min-width: 0;
+    padding: 10px;
 }
 
 .chefinfo img {
@@ -55,6 +57,7 @@
     max-width: 250px;
     width: 100%;
     text-align: center;
+    min-width: 0;
 }
 
 .chefinfo:hover {

@@ -7,6 +7,7 @@
 
 .var p {
     font-family: 'Poppins', sans-serif;
+    min-width: 0;
 }
 
 .varbr {
@@ -30,13 +31,14 @@
     display: flex;
     align-items: flex-end;
     background-size: cover;
+    min-width: 0;
 }
 
 .varcard1 {
     grid-column: 1/span 2;
     grid-row: 1/span 2;
     background-image: url("../assets/images/pizza.png");
-    height: 540px !important;
+    height: 550px !important;
 }
 
 .varcard2 {
@@ -64,13 +66,22 @@
 }
 
 .cardinfo {
-    padding: 1.25rem;
+    padding: 0.9rem;
     opacity: 0.8;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     background-color: white;
     width: 100%;
-    height: 35%;
+    height: 38%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.txtwrap { 
+max-height: 50px !important;
+overflow: hidden;
 }
 
 .varcard2 .cardinfo:hover,
@@ -102,7 +113,7 @@
 
 .varcard1>.cardinfo {
     background-color: #342679;
-    height: 18%;
+    height: 25%;
 }
 
 .varcard1>.cardinfo hr {
@@ -125,6 +136,7 @@
 .action {
     display: flex;
     justify-content: space-between;
+    min-width: 0;
 }
 
 .action svg {
@@ -151,6 +163,10 @@
 .action div {
     display: flex;
     align-items: center;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0.8rem;
 }
 
 .varcard1  .cardhead {
@@ -179,7 +195,6 @@
     font-size: 0.5rem;
     font-weight: 600;
     color: black;
-    margin-bottom: 15px !important;
 }
 
 .varcard2 .cardinfo:hover .carddesc,
@@ -214,13 +229,6 @@
     margin-right: 10px !important;
 }
 
-.action div {
-    margin-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 0.8rem;
-}
-
 .varcard1 .action div:hover{
     border: 1px solid white;
 }
@@ -230,4 +238,26 @@
 .varcard4 .cardinfo:hover .action div:hover,
 .varcard5 .cardinfo:hover .action div:hover {
     border: 1px solid white;
+}
+
+@media only screen and (max-width:780px) {
+    .actiontxt {
+        display: none !important;
+    }
+
+    .cardinfo {
+        padding: 0.7rem;
+    }
+
+    .cardinfo > div {
+        min-width: 0;
+    }
+
+    .varlist {
+        min-width: 0;
+    }
+
+    .var {
+        min-width: 0;
+    }
 }
