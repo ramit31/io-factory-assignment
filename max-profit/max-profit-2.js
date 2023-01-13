@@ -4,10 +4,12 @@ function maxProfitRec(timeLeft, earning, outBuiltArr, outEarnBuilt, est) {
     if (currTime - est[i].time <= 0) {
       if (earning >= outEarnBuilt.earning) {
         // console.log("Possible earnings:", earning, outBuiltArr);
-        outEarnBuilt.earning = earning;
         if (outEarnBuilt.built.length === 0)
           outEarnBuilt.built.push([...outBuiltArr]);
-        else {
+        else if (
+          outEarnBuilt.earning === earning &&
+          outEarnBuilt.built.length > 0
+        ) {
           let flag = true;
           for (let j = 0; j < outEarnBuilt.built.length; j++) {
             if (
@@ -20,7 +22,11 @@ function maxProfitRec(timeLeft, earning, outBuiltArr, outEarnBuilt, est) {
             }
           }
           if (flag) outEarnBuilt.built.push([...outBuiltArr]);
+        } else if (outEarnBuilt.earning < earning) {
+          outEarnBuilt.built = [];
+          outEarnBuilt.built.push([...outBuiltArr]);
         }
+        outEarnBuilt.earning = earning;
       }
     } else {
       currTime -= est[i].time;
@@ -67,6 +73,7 @@ maxProfit(4);
 maxProfit(8);
 maxProfit(9);
 maxProfit(12);
+maxProfit(15);
 
 // for input in node js uncomment below lines
 
@@ -76,6 +83,6 @@ maxProfit(12);
 // });
 
 // readline.question("Input: ", (inp) => {
-// maxProfit(...inp.split(" ").map((ele) => Number(ele)));
+// maxProfit(inp.split(" ").map((ele) => Number(ele))[0]);
 //   readline.close();
 // });
