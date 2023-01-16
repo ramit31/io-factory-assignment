@@ -52,7 +52,7 @@ function maxProfit(timeLeft) {
   if (outEarnBuilt["earning"] === 0) {
     console.log(`T:${0}P:${0}C:${0}`);
   } else {
-    // console.log("Final earning: ", outEarnBuilt.earning);
+    console.log("Earnings:", outEarnBuilt.earning);
     for (let i = 0; i < outEarnBuilt.built.length; i++) {
       console.log(
         `T:${outEarnBuilt.built[i][0]}P:${outEarnBuilt.built[i][1]}C:${outEarnBuilt.built[i][2]}`
